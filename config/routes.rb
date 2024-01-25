@@ -21,6 +21,8 @@ Rails.application.routes.draw do
   get "password/reset", to: "password_resets#new"
   post "password/reset", to: "password_resets#create"
 
+
+  get "/auth/twitter/callback", to: "omniuth_callbacks#twitter"
   
 
   # Defines the root path route ("/")
